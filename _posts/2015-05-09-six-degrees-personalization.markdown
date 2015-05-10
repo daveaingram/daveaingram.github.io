@@ -2,7 +2,7 @@
 layout:     post
 title:      "Six Degrees of Personalization"
 subtitle:   "One step at a time"
-date:       2015-04-05 12:00:00
+date:       2015-05-09 12:00:00
 author:     "Dave Ingram"
 header-img: "img/post-bg-02.jpg"
 ---
