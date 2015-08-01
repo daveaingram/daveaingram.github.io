@@ -33,7 +33,7 @@ So without further adieu, here are the steps as defined [on Wikipedia](http://en
 7. Repeat 4 through 6 as necessary
 8. Develop General Theories
 
-![The Scientific Method](http://en.wikipedia.org/wiki/Scientific_method#/media/File:Scientific_Method_3.jpg "The Scientific Method")
+![The Scientific Method](https://upload.wikimedia.org/wikipedia/commons/d/df/Scientific_Method_3.jpg "The Scientific Method")
 
 I want to talk to each one of these, but the tl;dr of this article is that
 most examples I see focus only on running lots of experiments (step 5), but they miss
