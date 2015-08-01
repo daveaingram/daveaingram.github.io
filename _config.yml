@@ -6,7 +6,6 @@ description: "Dave Ingram is a technologist and web developer, with a passion fo
 baseurl: ""
 url: "http://daveingram.us"
 twitter_username: daveaingram
-github_username: daveaingram
 
 # Build settings
 markdown: kramdown
