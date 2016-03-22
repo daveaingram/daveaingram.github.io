@@ -1,6 +1,7 @@
 ---
 layout:     post
 title:      "Personalize for Trust"
+subtitle:   "Personalization is about relationships. Relationships, about trust."
 date:       2016-02-22 09:00:00
 author:     "Dave Ingram"
 header-img: "img/post-bg-03.jpg"
