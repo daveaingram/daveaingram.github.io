@@ -17,6 +17,7 @@ Following that logic, let's spend a few minutes thinking about why personalizati
 We live our physical lives in 3 dimensions. Not a profound statement, but it leads to some fairly strong limitations. We often look at 2-dimensional data in the form of line charts or bar graphs. Creative individuals have devised creative ways to move past this limitation by showing more dimensions in color, shape and size, and by using software to render 3D models. Even animation and [sound](http://listen.hatnote.com/) (including pitch, timbre and duration) can be used. At best, this gets us to about 10 dimensions, but then the limits of human focus and short term memory step in to block us from even getting this far.
 
 Building personalized digital experiences is problematic, precisely because it brings us into a high dimensional space which becomes very hard to visualize and understand. Let's pick just a few of these:
+
 - Language
 - Region
 - Device
