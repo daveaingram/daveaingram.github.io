@@ -1,0 +1,13 @@
+{
+  "id": "dave",
+  "name": "Dave Ingram",
+  "image": "https://pbs.twimg.com/profile_images/849782721455034369/V8w-smRV_400x400.jpg",
+  "url": "http://daveingram.us/",
+  "location": "Charleston, SC",
+  "bio": "Loves to learn, loves to solve problems.",
+  "socialUrls": [
+    "https://github.com/daveaingram",
+    "https://twitter.com/daveaingram",
+    "mailto:dave.a.ingram@gmail.com"
+  ]
+}

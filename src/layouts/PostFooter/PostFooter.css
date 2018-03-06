@@ -1,0 +1,38 @@
+/* The author credit area after the post */
+.post-footer {
+    position: relative;
+    margin: 6rem 0 0;
+    padding: 3rem 0 0;
+    border-top: #b7b7b7 1px solid;
+    color: #b7b7b7;
+    min-height: 50px;
+}
+
+.post-footer h4 {
+    font-size: 1.8rem;
+    margin: -3px 0 0 0;
+}
+
+.post-footer p {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.75em;
+    color: #b7b7b7;
+    width: 40%;
+}
+
+/* ==========================================================================
+       Media Queries - Smaller than 500px
+   ========================================================================== */
+
+@media only screen and (max-width: 500px) {
+    .post-footer {
+        padding: 5rem 0 3rem;
+        text-align: center;
+    }
+
+    .post-footer p {
+      width: 100%;
+    }
+
+}

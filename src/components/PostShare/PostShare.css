@@ -1,0 +1,42 @@
+.post-footer .share {
+     position: absolute;
+     top: 3rem;
+     right: 0;
+     width: 20%;
+     text-align: right;
+ }
+
+.post-footer .share h4 {
+  margin-bottom: 5px;
+}
+
+.post-footer .share .share-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.share-buttons .SocialMediaShareButton {
+  cursor: pointer;
+  margin: 0 0 0 10px;
+}
+
+/* ==========================================================================
+   13. Media Queries - Smaller than 500px
+   ========================================================================== */
+
+@media only screen and (max-width: 500px) {
+    .post-footer .share {
+        position: static;
+        width: auto;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .post-footer .share .share-buttons {
+      justify-content: center;
+    }
+
+    .share-buttons .SocialMediaShareButton {
+      margin: 0 5px;
+    }
+}
