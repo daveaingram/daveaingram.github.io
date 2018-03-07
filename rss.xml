@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Dave Ingram]]></title><description><![CDATA[On Life, Technology and Whatever]]></description><link>https://daveingram.us</link><image><url>https://daveingram.us/logos/logo-512.png</url><title>Dave Ingram</title><link>https://daveingram.us</link></image><generator>GatsbyJS Casper Starter</generator><lastBuildDate>Wed, 07 Mar 2018 13:33:28 GMT</lastBuildDate><atom:link href="https://daveingram.us/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[Dave Ingram]]></author><copyright><![CDATA[Dave Ingram © 2018]]></copyright><item><title><![CDATA[n-Dimensional Experiences]]></title><description><![CDATA[My motto of late has become "personalization is hard." This tends to raise eyebrows coming from the product manager of a personalization…]]></description><link>https://daveingram.us/n-dimensional-experiences</link><guid isPermaLink="false">https://daveingram.us/n-dimensional-experiences</guid><category><![CDATA[Personalization]]></category><category><![CDATA[Marketing]]></category><dc:creator><![CDATA[Dave Ingram]]></dc:creator><pubDate>Tue, 22 Mar 2016 09:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My motto of late has become &quot;personalization is hard.&quot; This tends to raise eyebrows coming from the product manager of a personalization product, especially when I&apos;m in meetings with prospects or customers. It&apos;s true though. Personalization is hard. But the statement isn&apos;t meant to discourage, and I remain a strong advocate that personalized experiences are the way of the future. Albert Einstein is quoted as saying:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If I had an hour to solve a problem I&apos;d spend 55 minutes thinking about the problem and 5 minutes thinking about solutions.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Following that logic, let&apos;s spend a few minutes thinking about why personalization is hard.&lt;/p&gt;
+&lt;h2 id=&quot;the-limits-of-a-3d-world&quot;&gt;&lt;a href=&quot;#the-limits-of-a-3d-world&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Limits of a 3D World&lt;/h2&gt;
+&lt;p&gt;We live our physical lives in 3 dimensions. Not a profound statement, but it leads to some fairly strong limitations. We often look at 2-dimensional data in the form of line charts or bar graphs. Creative individuals have devised creative ways to move past this limitation by showing more dimensions in color, shape and size, and by using software to render 3D models. Even animation and &lt;a href=&quot;http://listen.hatnote.com/&quot;&gt;sound&lt;/a&gt; (including pitch, timbre and duration) can be used. At best, this gets us to about 10 dimensions, but then the limits of human focus and short term memory step in to block us from even getting this far.&lt;/p&gt;
+&lt;p&gt;Building personalized digital experiences is problematic, precisely because it brings us into a high dimensional space which becomes very hard to visualize and understand. Let&apos;s pick just a few of these:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Language&lt;/li&gt;
+&lt;li&gt;Region&lt;/li&gt;
+&lt;li&gt;Device&lt;/li&gt;
+&lt;li&gt;Age&lt;/li&gt;
+&lt;li&gt;Gender&lt;/li&gt;
+&lt;li&gt;Past Purchase&lt;/li&gt;
+&lt;li&gt;Time of Day&lt;/li&gt;
+&lt;li&gt;Day of Week&lt;/li&gt;
+&lt;li&gt;Season&lt;/li&gt;
+&lt;li&gt;Last Few Page Views&lt;/li&gt;
+&lt;li&gt;Current Mood&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Uh oh, that&apos;s already 11. So even with the most sophisticated data visualizations we can imagine, we&apos;re already beyond the scope of holding all the possibilities in mind. Fortunately, we are not without options. The remainder of this post will explore a few of the ways we can handle this problem.&lt;/p&gt;
+&lt;h2 id=&quot;black-box-algorithms&quot;&gt;&lt;a href=&quot;#black-box-algorithms&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Black Box Algorithms&lt;/h2&gt;
+&lt;p&gt;Mathematicians and Data Scientists deal with extremely high dimensional data sets all the time. Here we&apos;re discussing more than 10, which is already hard, but with the right algorithms and the speed of computers, we can run computations with literally millions of dimensions.&lt;/p&gt;
+&lt;p&gt;These algorithms can be extremely effective in making predictions about the future, but they can also be deceptive and lead to a variety of troubles. To take an extreme example, one of the major factors of the financial crisis of 2008 was &lt;a href=&quot;http://www.theguardian.com/technology/2008/oct/16/computing-software-financial-crisis&quot;&gt;software working in a very high dimensional space&lt;/a&gt;, to the point where the humans building and using the software didn&apos;t discover the errors until it was too late.&lt;/p&gt;
+&lt;h2 id=&quot;dimensionality-reduction&quot;&gt;&lt;a href=&quot;#dimensionality-reduction&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dimensionality Reduction&lt;/h2&gt;
+&lt;p&gt;In order to understand what happens inside of the black boxes described above, a range of techniques exist to reduce the number of dimensions used in calculations and to discover the most important or influential dimensions in any data set. Some techniques, such as &lt;a href=&quot;https://en.wikipedia.org/wiki/Principal_component_analysis&quot;&gt;Principal Component Analysis&lt;/a&gt; do very little to aid human intuition, and are used much more for simplifying computation. On the other hand, many machine learning and statistical techniques such as &lt;a href=&quot;https://en.wikipedia.org/wiki/Linear_regression&quot;&gt;Linear Regression&lt;/a&gt;, can produce--as a part of their output--information which tells us which variables used in a learned model were the most relevant in predicting whatever outcome we were trying to predict.&lt;/p&gt;
+&lt;p&gt;These latter techniques, in the hands of a skilled Data Scientist or used properly in the right software can inform us which of the hundreds of dimensions that &lt;em&gt;could&lt;/em&gt; be used in Personalization really &lt;em&gt;should&lt;/em&gt; be used.&lt;/p&gt;
+&lt;h2 id=&quot;higher-dimensional-uis&quot;&gt;&lt;a href=&quot;#higher-dimensional-uis&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Higher Dimensional UIs&lt;/h2&gt;
+&lt;p&gt;For Personalization software in particular, understanding what happens on a website or other experience in all of these different dimensions is a big challenge. I can easily toggle my website between its different languages, or even just have different sites for different languages. This is easy enough. But if I segment my visitors across several dimensions as well, I need preview and management capabilities in order to understand what can be happening at any given time in any area.&lt;/p&gt;
+&lt;p&gt;In the near future I&apos;ll be posting a lot more about the new User Interface coming out with the latest version of &lt;a href=&quot;www.acquia.com/Acquia-Lift&quot;&gt;Acquia Lift&lt;/a&gt;. While of course technically still a 2D UI, we&apos;ve used a mental model of allowing the user to zoom in, zoom out, and swipe side to side to work with a much larger canvas. A marketer can select any area that contains personalization, &quot;zoom in&quot;, and switch between the different variations. In the next moment, the user can &quot;impersonate&quot; a site visitor of a particular segment and see all of those personalized areas update with a preview of what will be shown by the decision engine. While not quite the UI used by Tom Cruise in Minority Report, it&apos;s probably the closest thing that I&apos;ve ever used to that model. Anyway, stay tuned for updates on that front.&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Regardless of the techniques or software used to help manage it, the reality is that the digital experiences we create today are no longer 2D. This is not a solved problem, but it&apos;s a fun one to work on, and I look forward to seeing all of the different ways that organizations approach it.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Personalize for Trust]]></title><description><![CDATA[Personalization is about relationships. Relationships, about trust. Much has been written about the good, bad and ugly of personalization…]]></description><link>https://daveingram.us/personalize-for-trust</link><guid isPermaLink="false">https://daveingram.us/personalize-for-trust</guid><category><![CDATA[Personalization]]></category><category><![CDATA[Marketing]]></category><dc:creator><![CDATA[Dave Ingram]]></dc:creator><pubDate>Mon, 22 Feb 2016 09:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Personalization is about relationships. Relationships, about trust. Much has been written about the good, bad and ugly of personalization, but all too often, these conversations focus simply on technology or perhaps general tricks to “make things more personal.” The technology that powers digital personalization is simply enabling better marketers and content creators to more closely approximate face to face relationship building, and relationships can be good, bad and ugly, which is really the point.&lt;/p&gt;
+&lt;p&gt;When a friend, colleague or acquaintance shares information with us, we have unspoken social contracts regarding how and when we can use that information, which, when followed, lead to deeper relationships. Ignore those rules of engagement though, and your relationship will be short lived. So put aside all thoughts of the technology and techniques for a moment, and keep these basics in mind.&lt;/p&gt;
+&lt;h2 id=&quot;dont-be-forgetful&quot;&gt;&lt;a href=&quot;#dont-be-forgetful&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Don’t Be Forgetful&lt;/h2&gt;
+&lt;p&gt;Did you ever forget a close friends birthday? An anniversary? How about the name of a new colleague or the names of their spouse or kids? These memory slips can usually be forgiven once or twice, but if you keep this up, the relationship will be short lived. On the flip side, research shows that using someone’s name both &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1647299/&quot;&gt;in conversation&lt;/a&gt; and &lt;a href=&quot;http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2725251&quot;&gt;in email marketing&lt;/a&gt; can have positive effects. The more details you can remember and respond (appropriately) to, the more that relationship can grow.&lt;/p&gt;
+&lt;h2 id=&quot;dont-be-nosy&quot;&gt;&lt;a href=&quot;#dont-be-nosy&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Don’t Be Nosy&lt;/h2&gt;
+&lt;p&gt;While it’s great remember the details that someone tells you, bombarding a new acquaintance with personal questions that go beyond acceptable social norms can be a very quick way to end a relationship as well. Asking a stranger at a party what they do for work is fine, but asking them how much they get paid is likely crossing the line. The flip side of this is also true though. Once a relationship has reached a certain stage, asking more intimate or detailed questions &lt;a href=&quot;http://www.inc.com/shelley-prevost/25-revealing-questions-that-build-better-relationships-at-work.html&quot;&gt;can be the key to unlocking that relationship’s potential&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;(To briefly break my own rule and talk tech, this point is why progressive profiling can be so effective.)&lt;/p&gt;
+&lt;h2 id=&quot;dont-be-a-snitch&quot;&gt;&lt;a href=&quot;#dont-be-a-snitch&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Don’t Be a Snitch&lt;/h2&gt;
+&lt;p&gt;If someone shares information in confidence, the best way to ruin that relationship is to gossip or spread that information to others. In the realm of online relationships, this is why data privacy is so incredibly important. On top of that, while 2nd and 3rd party data sharing services exist, the value of these should be weighed heavily against the potential for betrayal of trust.&lt;/p&gt;
+&lt;h2 id=&quot;focus-on-trust&quot;&gt;&lt;a href=&quot;#focus-on-trust&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Focus on Trust&lt;/h2&gt;
+&lt;p&gt;Technology is inherently neither good nor bad, but rather an enabler for people. In the case of personalization technology, mass communications are beginning to feel ever closer to conversations with individuals. As the holder of these tools, you can choose to treat those individual with respect, and in so doing build trust, or you can disregard the relationship and break trust. Which will you choose?&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Marketing Science]]></title><description><![CDATA[The other day my niece asked me what the steps are of the scientific method.
+I responded with "form a hypothesis and run an experiment", but…]]></description><link>https://daveingram.us/marketing-science</link><guid isPermaLink="false">https://daveingram.us/marketing-science</guid><category><![CDATA[Marketing]]></category><category><![CDATA[Personalization]]></category><dc:creator><![CDATA[Dave Ingram]]></dc:creator><pubDate>Fri, 31 Jul 2015 09:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The other day my niece asked me what the steps are of the scientific method.
+I responded with &quot;form a hypothesis and run an experiment&quot;, but
+she wasn&apos;t satisfied. There was something with a &quot;P&quot; word in there and she
+wanted to get all of the steps right. When I googled the steps, numerous
+elementary school websites appeared, expounding on the steps of the
+scientific method, which both gave me hope for our next generation of scientists,
+and also got me wondering about who else was missing some steps from the scientific
+method.&lt;/p&gt;
+&lt;p&gt;I was thinking about this exchange later, and how essential it is for marketers
+to think about and follow the steps of the scientific method when working on their
+websites and other marketing materials. The proliferation of A/B testing tools over
+the past few years has made one step much easier, but the value of these tools is
+greatly diminished without a proper grounding in the scientific method.&lt;/p&gt;
+&lt;p&gt;So without further adieu, here are the steps as defined &lt;a href=&quot;http://en.wikipedia.org/wiki/Scientific_method&quot;&gt;on Wikipedia&lt;/a&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make Observations&lt;/li&gt;
+&lt;li&gt;Think of Interesting Questions&lt;/li&gt;
+&lt;li&gt;Formulate Hypotheses&lt;/li&gt;
+&lt;li&gt;Develop Testable Predictions&lt;/li&gt;
+&lt;li&gt;Gather Data to Test Predictions&lt;/li&gt;
+&lt;li&gt;Refine, Alter, Expand or Reject Hypotheses&lt;/li&gt;
+&lt;li&gt;Repeat 4 through 6 as necessary&lt;/li&gt;
+&lt;li&gt;Develop General Theories&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/d/df/Scientific_Method_3.jpg&quot; alt=&quot;The Scientific Method&quot; title=&quot;The Scientific Method&quot;&gt;&lt;/p&gt;
+&lt;p&gt;I want to talk to each one of these, but the tl;dr of this article is that
+most examples I see focus only on running lots of experiments (step 5), but they miss
+doing it in such a way that general theories can be established. This is a greatly
+missed opportunity and should be remedied post haste.&lt;/p&gt;
+&lt;h2 id=&quot;make-observations&quot;&gt;&lt;a href=&quot;#make-observations&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Make Observations&lt;/h2&gt;
+&lt;p&gt;You&apos;ll never see anything interesting unless you stop, open your eyes, and pay
+attention. Opportunities for getting to know your audience abound in both the
+physical world and online. Surveying your users and performing user testing
+(made far easier with services like &lt;a href=&quot;http://usertesting.com&quot;&gt;usertesting.com&lt;/a&gt;) are
+excellent places to start. Web analytics tools such as &lt;a href=&quot;http://google.com/analytics&quot;&gt;Google Analytics&lt;/a&gt;
+or &lt;a href=&quot;http://kissmetrics.com&quot;&gt;Kissmetrics&lt;/a&gt; are also indispensable in this regard.&lt;/p&gt;
+&lt;p&gt;There are entire professions dedicated to both user testing and advanced analytics,
+and this step should be taken very seriously. If you&apos;re not taking enough time
+on this today, be sure to block off time to just stop and observe.&lt;/p&gt;
+&lt;h2 id=&quot;think-of-interesting-questions&quot;&gt;&lt;a href=&quot;#think-of-interesting-questions&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Think of Interesting Questions&lt;/h2&gt;
+&lt;p&gt;As you observe, questions will undoubtedly begin to form. Write them down and
+continue to ask more. If you see something interesting, ask why, then ask why
+again. In fact, &lt;a href=&quot;https://en.wikipedia.org/wiki/5_Whys&quot;&gt;ask why five times&lt;/a&gt; and
+you&apos;ll undoubtedly get somewhere of interest.&lt;/p&gt;
+&lt;h2 id=&quot;formulate-hypotheses&quot;&gt;&lt;a href=&quot;#formulate-hypotheses&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Formulate Hypotheses&lt;/h2&gt;
+&lt;p&gt;Only with a well formed hypothesis will you be able to make accurate statements
+in following steps. A good hypothesis has the end game of a general theory in
+mind, not just a question of &quot;which image will work better in my call to action?&quot;&lt;/p&gt;
+&lt;p&gt;A good hypothesis could look like &quot;my audience will respond better to casual
+than formal language.&quot; What makes this a good one? It leads to easily testable
+predictions as well as the potential of a general theory.&lt;/p&gt;
+&lt;h2 id=&quot;develop-testable-predictions&quot;&gt;&lt;a href=&quot;#develop-testable-predictions&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Develop Testable Predictions&lt;/h2&gt;
+&lt;p&gt;A testable prediction is a smaller unit than a hypothesis. In other words, if
+the hypothesis says &quot;I think this is the general rule&quot;, the prediction says
+&quot;using this specific piece of language will perform better than this other
+specific piece of language.&quot; Once you get that far, you&apos;re ready to launch an
+experiment.&lt;/p&gt;
+&lt;h2 id=&quot;gather-data-to-test-predictions&quot;&gt;&lt;a href=&quot;#gather-data-to-test-predictions&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gather Data to Test Predictions&lt;/h2&gt;
+&lt;p&gt;Running the actual experiment can be done in many different ways. There are
+dedicated A/B testing solutions such as &lt;a href=&quot;http://optimizely.com&quot;&gt;Optimizely&lt;/a&gt; or
+&lt;a href=&quot;http://vwo.com&quot;&gt;Visual Website Optimizer&lt;/a&gt; for the web, but many other tools
+include A/B testing such as personalization solutions, email marketing tools
+and landing page tools. There are also many open source testing frameworks that
+can be used to perform this step.&lt;/p&gt;
+&lt;p&gt;The important part is that you set up a system that allows you to run a lot of
+tests often. This will pay dividends over time, as you&apos;ll see in the next steps.&lt;/p&gt;
+&lt;h2 id=&quot;refine-alter-expand-or-reject-hypotheses&quot;&gt;&lt;a href=&quot;#refine-alter-expand-or-reject-hypotheses&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Refine, Alter, Expand or Reject Hypotheses&lt;/h2&gt;
+&lt;p&gt;A single experiment isn&apos;t enough to form a general theory or to reject a hypothesis.
+There are far too many confounding conditions for that to be the case. For example,
+let&apos;s say you run an experiment on your home page using the hypothesis that friendly
+language is better than formal language, and your testable prediction is that
+the phrase &quot;Hey y&apos;all, how can we help?&quot; will perform better than &quot;Visit our
+support page for assistance&quot;. It is indeed true that one phrase is more casual
+and the other more formal, but perhaps the former phrase is too colloquial for
+your audience or it has gone too far. Casual language &lt;em&gt;in general&lt;/em&gt; may indeed
+be better than formal, but not in this &lt;em&gt;specific&lt;/em&gt; case.&lt;/p&gt;
+&lt;p&gt;Other things can &quot;go wrong&quot; with your test as well. For example, a large conference
+in the Southern United States during the week that you run this test may lead to
+a large group of people finding the &quot;hey y&apos;all&quot; language to be preferable, but
+the next week as the characteristics of your audience change, this can no longer
+be the case. So as you see results from an initial test, you should refine and
+expand your original hypothesis to get to something sufficiently accurate that
+can be answered. Surprising effects can also be found in this way, often leading
+to cases where personalization can be employed to speak to different kinds of
+people in different ways.&lt;/p&gt;
+&lt;h2 id=&quot;repeat-4-through-6-as-necessary&quot;&gt;&lt;a href=&quot;#repeat-4-through-6-as-necessary&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Repeat 4 through 6 as necessary&lt;/h2&gt;
+&lt;p&gt;Eventually you&apos;ll want to either accept or reject your overall hypothesis, and
+the importance of the question will help dictate how many different tests should
+be run. For example, if you&apos;re trying to determine the overall tone of language
+to use in all marketing materials, this warrants many carefully planned tests
+as this could effect the overall trajectory of your business. If, however, you&apos;re
+simply trying to determine the optimal size or color of a specific button, the
+risk of getting that wrong is likely smaller and can be answered in a few short
+iterations.&lt;/p&gt;
+&lt;h2 id=&quot;develop-general-theories&quot;&gt;&lt;a href=&quot;#develop-general-theories&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Develop General Theories&lt;/h2&gt;
+&lt;p&gt;General theories are the gold you are mining for when embarking on an optimization
+plan. In the physical sciences, generalized theories about physics led to a world
+where man could walk on the moon. While perhaps less lofty, generalized theories
+of audience behavior can lead to far greater benefits in business than simply
+testing everything you can think of. If you can prove over many experiments that
+a certain tone of voice in your marketing material truly leads to a substantial
+lift in conversions, then you can use that knowledge in all your materials and
+move on to testing other questions.&lt;/p&gt;
+&lt;h2 id=&quot;in-conclusion&quot;&gt;&lt;a href=&quot;#in-conclusion&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;In Conclusion&lt;/h2&gt;
+&lt;p&gt;Running lots of experiments can have some value, but keeping in mind the greater
+picture and thinking like a scientist will provide far greater rewards in the
+long term. Work towards general theories about your brand, your market or your
+audience and you will get far more out of your investment in optimization and
+personalization.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Six Degrees of Personalization]]></title><description><![CDATA[I spend a lot of my time talking and thinking about personalization. If you
+know that data driven personalization and experimentation is…]]></description><link>https://daveingram.us/six-degrees-of-personalization</link><guid isPermaLink="false">https://daveingram.us/six-degrees-of-personalization</guid><category><![CDATA[Personalization]]></category><category><![CDATA[Marketing]]></category><dc:creator><![CDATA[Dave Ingram]]></dc:creator><pubDate>Sat, 09 May 2015 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I spend a lot of my time talking and thinking about personalization. If you
+know that data driven personalization and experimentation is something you
+should be doing but don&apos;t really know where to start or how to get there, then
+you&apos;re decidedly in the majority. Most organizations are doing a fairly good
+job of collecting a lot of data, a smaller number are excelling at understanding
+the data. Very few are activating that data in real time.&lt;/p&gt;
+&lt;p&gt;In this post I aim to lay out six steps that go from the very beginning to
+using data like the best of them.&lt;/p&gt;
+&lt;h2 id=&quot;1-get-the-data&quot;&gt;&lt;a href=&quot;#1-get-the-data&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Get the Data&lt;/h2&gt;
+&lt;p&gt;That sounds easy enough, right? You are probably collecting mountains of data
+already in the form of web analytics, CRM, email marketing, POS, and more.
+That&apos;s a great start, but there might be a missing step. If all of that data
+is living in separate silos, it&apos;s going to be quite difficult to gain the
+level of insight that you really need.&lt;/p&gt;
+&lt;p&gt;There are a lot of great tools on the market that help solve this problem. The
+(somewhat) new &lt;a href=&quot;https://support.google.com/analytics/answer/2790010?hl=en&quot;&gt;Universal Analytics&lt;/a&gt; from Google is a great place to start. There are also a myriad of Business
+Intelligence tools out there focussed on the problem from different angles
+such as &lt;a href=&quot;http://looker.com&quot;&gt;Looker&lt;/a&gt;, &lt;a href=&quot;http://domo.com&quot;&gt;Domo&lt;/a&gt; and
+&lt;a href=&quot;http://gooddata.com&quot;&gt;GoodData&lt;/a&gt; just to name a few.&lt;/p&gt;
+&lt;p&gt;A major consideration here is getting all the data into a consistent format
+that makes sense when you query between these different sources. Depending
+on your tool, you will either need to do that before pushing the data into
+the system, or the tool may have data cleaning capabilities. If you have a
+lot of data to clean up, you might consider a tool like
+&lt;a href=&quot;http://paxata.com&quot;&gt;Paxata&lt;/a&gt; or &lt;a href=&quot;http://alteryx.com&quot;&gt;Alteryx&lt;/a&gt; to make that a
+lot easier.&lt;/p&gt;
+&lt;h2 id=&quot;2-understand-the-data&quot;&gt;&lt;a href=&quot;#2-understand-the-data&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Understand the Data&lt;/h2&gt;
+&lt;p&gt;Now that you have data, what do you do with it? This is probably the hardest
+question of this whole post, and the one where organizations are most likely
+to go wrong. Having loads of data often leads people to find &quot;truths&quot; that
+aren&apos;t there. Spurious correlations run rampant in business and in life, and
+if you don&apos;t take the time to dig deeper, you may be in trouble down the line.&lt;/p&gt;
+&lt;p&gt;Truly understanding your data, and understanding it well, is going to take time.
+If you are fortunate enough to have a full BI team in your organization, then
+you can ask lots of deep questions. If you&apos;re new to this and are working
+within a smaller team, take your time and look at the data from a lot of
+different directions. Slice, sort and pivot the data in as many ways you can
+think of until you start to see the patterns like &lt;a href=&quot;http://vignette4.wikia.nocookie.net/matrix/images/d/dc/Cypher_Talks_with_Neo.png/revision/latest?cb=20130215031028&quot;&gt;Cypher reading the Matrix&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;3-run-some-experiments&quot;&gt;&lt;a href=&quot;#3-run-some-experiments&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Run some experiments&lt;/h2&gt;
+&lt;p&gt;Perhaps the very best way to gain knowledge about your visitors, or just about
+anything for that matter, is through scientific experimentation. On the web,
+we typically call this an A/B test, but your mindset should be that of a
+scientist seeking to gain insight. This mindset has implications that not
+all practitioners of A/B testing tools will follow.&lt;/p&gt;
+&lt;p&gt;Here&apos;s what I mean: You can run an experiment on your home page to see whether
+&quot;Free&quot; converts better than &quot;Get it today&quot; or an orange button beats a blue
+button. You can start that experiment, and wait until your tool says you have
+a &quot;winner&quot; (more on this dangerous topic in a future blog post). Once you have
+decided the blue beats the orange, you can implement that on your button and
+move on. What have you just learned? That your visitors like the color blue?
+Maybe. It is very unlikely that you&apos;ve learned enough at this point if you
+didn&apos;t start with a well formed hypothesis.&lt;/p&gt;
+&lt;p&gt;Let&apos;s say you&apos;re interested in increasing clicks on a call to action (CTA) on
+your home page. Rather than simply making changes, start by stating some
+assumptions and some possible changes that might effect users behavior. Is the
+button you want them to click on sufficiently visible? What else might be
+competing for its attention? If your visitor does notice the button, is it
+clearly communicating what will happen when they click on it? Do they have any
+reason to be nervous about what will happen? If you can answer these questions
+first, then you can move to changes that you could make that, if your hypothesis
+is correct, would improve your conversions.&lt;/p&gt;
+&lt;p&gt;Now you&apos;re ready to run an experiment, but don&apos;t just stop at one. If you think
+the button isn&apos;t visible enough, try changing its color in one experiment,
+making it bigger in another, and making something else &lt;em&gt;smaller&lt;/em&gt; in another.
+If you&apos;re right that people were missing the button before, then you should
+see significant results with each one of these changes. If you don&apos;t see those
+results, then you&apos;ve also learned a valuable lesson: It&apos;s not about visibility.
+You can now safely move on to changing wording or other messaging that might
+be creating friction in order to improve the results, and you may have even
+learned some valuable lessons about your visitors themselves.&lt;/p&gt;
+&lt;h2 id=&quot;4-segment-and-target-your-audience&quot;&gt;&lt;a href=&quot;#4-segment-and-target-your-audience&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. Segment and target your audience&lt;/h2&gt;
+&lt;p&gt;Now I&apos;m going to let you in on a little secret: Not all your visitors are the
+same. Of course, you already knew that. If you stop and think about it, there
+probably aren&apos;t many things more obvious. But due to technical limitations of
+the past and lack of resources in the present, we often think about our visitors
+as one big homogenous group and give them all the same content.&lt;/p&gt;
+&lt;p&gt;Really great websites in the past have addressed this problem through great
+information architecture, allowing all the different visitors to quickly
+find the content that they are looking for. Really great websites of the
+present do that as well, but they go a step further by personalizing a web site
+to the needs and desires of the current visitor, in the present moment.&lt;/p&gt;
+&lt;p&gt;More than just serving your visitor&apos;s needs though, segmentation allows you
+to dive deeper into understanding. So once you&apos;ve built a segment, say drilling
+down to geography, past behavior or device type, go and run more experiments
+within that segment and refine the experience for each group.&lt;/p&gt;
+&lt;h2 id=&quot;5-repeat-steps-1-through-4&quot;&gt;&lt;a href=&quot;#5-repeat-steps-1-through-4&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. Repeat steps 1 through 4&lt;/h2&gt;
+&lt;p&gt;If you&apos;ve ever thought personalization or A/B testing were tools you installed
+on your site, you were mistaken. Personalization is a mindset; a process; a
+way of life. Ok, maybe not a way of life .. but it&apos;s most definitely a process
+and one that takes time and iteration.&lt;/p&gt;
+&lt;p&gt;Don&apos;t loose heart though, small experiments and small personalization can have
+huge impact on your bottom line. Focus on learning, refining, and always
+moving forward, and the return on investment of your time and resources will
+be well worth it.&lt;/p&gt;
+&lt;h2 id=&quot;6-trusting-the-machine&quot;&gt;&lt;a href=&quot;#6-trusting-the-machine&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;6. Trusting the machine&lt;/h2&gt;
+&lt;p&gt;A lot of buzz in the personalization space centers around machine learning and
+automated content recommendation techniques a la Facebook, Netflix and Google
+advertising. I find this area of research to be incredibly exciting and in the
+right situations believe it can be incredibly powerful. I want to give a few
+caveats here before the excitement runs away.&lt;/p&gt;
+&lt;p&gt;First of all, machine learning carries with it a trade-off. On one hand, you
+can have complex blended models that are incredibly accurate in predicting user
+behavior. On the other hand, you can have predictions that are easy to
+interpret. Sometimes you can have a nice blend, but the algorithms used by
+the best prediction algorithms will teach you very little about the behavior
+of your users, or how to plan your next piece of content.&lt;/p&gt;
+&lt;p&gt;Second, how many times have you been frustrated with the inaccuracy of a
+recommendation from Netflix or Facebook? If you&apos;re anything like me, it&apos;s
+rather frequent. Now, not many organizations have a data team on par with
+these, so if you expect that switching on a black box recommendation algorithm
+will instantly give your site through the roof conversion rates, you will
+likely have a bad day when the data comes in.&lt;/p&gt;
+&lt;p&gt;That said, if you have a large amount of great content and a lot of different
+kinds of visitors, then a manual process of segmentation and targeting for
+each type of visitor can quickly become impractical. If that is the case,
+then you should be looking at automated recommendation software, of which there
+are some really great options out there. Automated recommendations should always
+be used in tandem with a solid practice of data collection, understanding and
+experimentation though, so that you don&apos;t miss out on the evolutionary process
+that your site can take described in the rest of this post.&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-hidden=&quot;true&quot; class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;You can do great things with data. Whether you&apos;re just starting to think about
+personalization or have been doing it for a decade, there are always ways of
+improving. Focus on the process and the learnings that you can achieve from
+using these tools. Ask good questions. Dive deep into the data. And above all,
+have fun!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[For anyone who has programmed, those two words--Hello World--mean an awful lot.
+They mean taking the first steps towards something new and…]]></description><link>https://daveingram.us/hello-world</link><guid isPermaLink="false">https://daveingram.us/hello-world</guid><category><![CDATA[Life]]></category><dc:creator><![CDATA[Dave Ingram]]></dc:creator><pubDate>Sun, 05 Apr 2015 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;For anyone who has programmed, those two words--Hello World--mean an awful lot.
+They mean taking the first steps towards something new and exciting. They mean a
+recognition that there is no shame in starting small down a new adventure that
+can take you as far as your imagination will allow.&lt;/p&gt;
+&lt;p&gt;It is with this excitement that I launch this new blog, where I can share my thoughts on technology, data, life and more. I am forever curious and forever learning, and I hope that as you read these posts that you will learn something that will change you and make your life better, even ever so slightly. Do enjoy.&lt;/p&gt;</content:encoded></item></channel></rss>

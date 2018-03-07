@@ -1,0 +1,2 @@
+webpackJsonp([23028899713517],{427:function(a,o){a.exports={data:{allMarkdownRemark:null,allAuthorsJson:{edges:[{node:{id:"dave",name:"Dave Ingram",image:"https://pbs.twimg.com/profile_images/849782721455034369/V8w-smRV_400x400.jpg",url:"http://daveingram.us/",bio:"Loves to learn, loves to solve problems.",location:"Charleston, SC",socialUrls:["https://github.com/daveaingram","https://twitter.com/daveaingram","mailto:dave.a.ingram@gmail.com"]}}]}},pathContext:{author:"dave"}}}});
+//# sourceMappingURL=path---author-dave-285dbef46054da35a184.js.map

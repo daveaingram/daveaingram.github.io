@@ -1,0 +1,100 @@
+{
+  "assetsByChunkName": {
+    "path---categories-personal": [
+      "path---categories-personal-3da7923acd922d41526a.js",
+      "path---categories-personal-3da7923acd922d41526a.js.map"
+    ],
+    "path---marketing-science": [
+      "path---marketing-science-f2115f07f6b6a1867708.js",
+      "path---marketing-science-f2115f07f6b6a1867708.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "path---n-dimensional-experiences": [
+      "path---n-dimensional-experiences-05c2a2bfcbfd1ef3aabc.js",
+      "path---n-dimensional-experiences-05c2a2bfcbfd1ef3aabc.js.map"
+    ],
+    "component---src-layouts-index-jsx": [
+      "component---src-layouts-index-jsx-18f9599ebbe552ce475d.js",
+      "component---src-layouts-index-jsx-18f9599ebbe552ce475d.js.map"
+    ],
+    "path---categories-tech": [
+      "path---categories-tech-d8232ff3b15224f0dfff.js",
+      "path---categories-tech-d8232ff3b15224f0dfff.js.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
+    "component---src-templates-category-jsx": [
+      "component---src-templates-category-jsx-ff2f4acf4f8b3fd6680d.js",
+      "component---src-templates-category-jsx-ff2f4acf4f8b3fd6680d.js.map"
+    ],
+    "path---index": [
+      "path---index-5209508478e5f01288df.js",
+      "path---index-5209508478e5f01288df.js.map"
+    ],
+    "component---src-pages-about-jsx": [
+      "component---src-pages-about-jsx-16dca089dee574aef9ce.js",
+      "component---src-pages-about-jsx-16dca089dee574aef9ce.js.map"
+    ],
+    "path---hello-world": [
+      "path---hello-world-89e537deb10f41835220.js",
+      "path---hello-world-89e537deb10f41835220.js.map"
+    ],
+    "commons": [
+      "commons-b6f89a1c7c8475e0a166.js",
+      "build-js-styles.css",
+      "commons-b6f89a1c7c8475e0a166.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---personalize-for-trust": [
+      "path---personalize-for-trust-e1bea181a4ea2fdac657.js",
+      "path---personalize-for-trust-e1bea181a4ea2fdac657.js.map"
+    ],
+    "component---src-templates-tag-jsx": [
+      "component---src-templates-tag-jsx-9fdf2288efb4571cc07e.js",
+      "component---src-templates-tag-jsx-9fdf2288efb4571cc07e.js.map"
+    ],
+    "path---tags-personalization": [
+      "path---tags-personalization-bf6485d1f59b1bb44e25.js",
+      "path---tags-personalization-bf6485d1f59b1bb44e25.js.map"
+    ],
+    "component---src-templates-index-jsx": [
+      "component---src-templates-index-jsx-04111c7a1ef9f0207af3.js",
+      "component---src-templates-index-jsx-04111c7a1ef9f0207af3.js.map"
+    ],
+    "path---tags-marketing": [
+      "path---tags-marketing-536a90aa1244b016635b.js",
+      "path---tags-marketing-536a90aa1244b016635b.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-templates-post-jsx": [
+      "component---src-templates-post-jsx-e16f6a6f01ab776cff17.js",
+      "component---src-templates-post-jsx-e16f6a6f01ab776cff17.js.map"
+    ],
+    "path---tags-life": [
+      "path---tags-life-5e8a3655f8f7384a0fdf.js",
+      "path---tags-life-5e8a3655f8f7384a0fdf.js.map"
+    ],
+    "app": [
+      "app-c10ac5fb4917873efc71.js",
+      "build-js-styles.css",
+      "app-c10ac5fb4917873efc71.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---six-degrees-of-personalization": [
+      "path---six-degrees-of-personalization-6036e299869302779e4e.js",
+      "path---six-degrees-of-personalization-6036e299869302779e4e.js.map"
+    ],
+    "path---about": [
+      "path---about-a0e39f21c11f6a62c5ab.js",
+      "path---about-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}
