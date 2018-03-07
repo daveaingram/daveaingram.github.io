@@ -124,7 +124,7 @@ class PostTemplate extends React.Component {
                 <p className="message">
                   Thanks for reading. If you enjoyed this,
                   comment below or hit me up on twitter
-                  <a href="https://twitter.com/daveaingram">@daveaingram</a>
+                  &nbsp;<a href="https://twitter.com/daveaingram">@daveaingram</a>
                 </p>
                 <PostShare
                   postNode={postNode}
