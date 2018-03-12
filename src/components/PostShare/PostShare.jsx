@@ -15,6 +15,8 @@ class PostShare extends React.Component {
     const post = postNode.frontmatter;
     const url = formatSiteUrl(config.siteUrl, postPath);
 
+    console.log(url)
+    console.log(post)
     return (
       <section className="share">
         <h4>Share this post</h4>
@@ -22,10 +24,10 @@ class PostShare extends React.Component {
           <FacebookShareButton url={url} >
             <FacebookIcon size={32} round={true} />
           </FacebookShareButton>
-          <LinkedinShareButton url={url}>
+          <LinkedinShareButton url={url} title={post.title}>
             <LinkedinIcon size={32} round={true} />
           </LinkedinShareButton>
-          <TwitterShareButton url={url}>
+          <TwitterShareButton url={url} via="daveaingram" title={post.title}>
             <TwitterIcon size={32} round={true} />
           </TwitterShareButton>
         </div>
