@@ -1,5 +1,9 @@
 {
   "assetsByChunkName": {
+    "path---a-newtonian-explanation-of-agile": [
+      "path---a-newtonian-explanation-of-agile-104a7808fa2e68f7feff.js",
+      "path---a-newtonian-explanation-of-agile-104a7808fa2e68f7feff.js.map"
+    ],
     "path---categories-personal": [
       "path---categories-personal-3da7923acd922d41526a.js",
       "path---categories-personal-3da7923acd922d41526a.js.map"
@@ -32,13 +36,17 @@
       "component---src-templates-category-jsx-ff2f4acf4f8b3fd6680d.js",
       "component---src-templates-category-jsx-ff2f4acf4f8b3fd6680d.js.map"
     ],
+    "path---closing-my-chapter-at-acquia": [
+      "path---closing-my-chapter-at-acquia-184baf36ca157ecd9333.js",
+      "path---closing-my-chapter-at-acquia-184baf36ca157ecd9333.js.map"
+    ],
     "path---moving-to-charleston": [
       "path---moving-to-charleston-d6ce57514d269072f97e.js",
       "path---moving-to-charleston-d6ce57514d269072f97e.js.map"
     ],
     "path---index": [
-      "path---index-0b1cec4a7f38f1cd69dd.js",
-      "path---index-0b1cec4a7f38f1cd69dd.js.map"
+      "path---index-ee0f4339f4021480c513.js",
+      "path---index-ee0f4339f4021480c513.js.map"
     ],
     "component---src-pages-about-jsx": [
       "component---src-pages-about-jsx-16dca089dee574aef9ce.js",
@@ -55,8 +63,8 @@
       "build-js-styles.css.map"
     ],
     "path---tags-business": [
-      "path---tags-business-456e037f5eaec2edd33d.js",
-      "path---tags-business-456e037f5eaec2edd33d.js.map"
+      "path---tags-business-a8993c6669d5472aee01.js",
+      "path---tags-business-a8993c6669d5472aee01.js.map"
     ],
     "path---personalize-for-trust": [
       "path---personalize-for-trust-c4ed5ac4afc1f57e1550.js",
@@ -91,13 +99,13 @@
       "path---tags-charleston-080001e2bd364d157352.js.map"
     ],
     "path---tags-life": [
-      "path---tags-life-6f4db04a6900afc1c8ff.js",
-      "path---tags-life-6f4db04a6900afc1c8ff.js.map"
+      "path---tags-life-16c350e31471cf5412b8.js",
+      "path---tags-life-16c350e31471cf5412b8.js.map"
     ],
     "app": [
-      "app-5543d816a9068d755162.js",
+      "app-62c2288ef09b8f6a619c.js",
       "build-js-styles.css",
-      "app-5543d816a9068d755162.js.map",
+      "app-62c2288ef09b8f6a619c.js.map",
       "build-js-styles.css.map"
     ],
     "path---categories-life": [
@@ -113,8 +121,8 @@
       "path---asking-questions-3f9de469decb4c8fca04.js.map"
     ],
     "path---categories-business": [
-      "path---categories-business-ffd93d4fb0239310da5e.js",
-      "path---categories-business-ffd93d4fb0239310da5e.js.map"
+      "path---categories-business-c620ecc47b8a76da89b5.js",
+      "path---categories-business-c620ecc47b8a76da89b5.js.map"
     ],
     "path---about": [
       "path---about-a0e39f21c11f6a62c5ab.js",
