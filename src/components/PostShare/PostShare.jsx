@@ -15,8 +15,6 @@ class PostShare extends React.Component {
     const post = postNode.frontmatter;
     const url = formatSiteUrl(config.siteUrl, postPath);
 
-    console.log(url)
-    console.log(post)
     return (
       <section className="share">
         <h4>Share this post</h4>
