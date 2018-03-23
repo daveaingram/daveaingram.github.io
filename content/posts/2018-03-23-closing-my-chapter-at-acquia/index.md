@@ -1,7 +1,7 @@
 ---
 date: "2018-03-23"
 title: "Closing My Chapter at Acquia"
-category: Business
+category: Life
 cover: "/images/pfunk.JPG"
 tags:
   - Business
